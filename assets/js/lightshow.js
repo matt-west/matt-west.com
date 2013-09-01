@@ -10,6 +10,8 @@ var LightShow = (function($) {
   var count = 0;
   var scrWidth;
   var scrHeight;
+  var tailLength = 190;
+  var usedTails = [];
 
   // Constructor
   var LightShow = function () {
@@ -29,7 +31,6 @@ var LightShow = (function($) {
     var color = LightShow.randColor();
     var orientation = LightShow.randOrientation();
     var entry = 0;
-    var id = "tail" + (count + 1);
     
     // Initialise position values
     var topVal = '';
@@ -40,27 +41,43 @@ var LightShow = (function($) {
     // Calculate the entry points and set the variables
     if (orientation == "vertical-TB") {
       start = "left";
-      topVal = scrHeight + 254;
-      entry = LightShow.randEntryPoint(scrWidth) - 1;
+      topVal = scrHeight + tailLength;
+      entry = LightShow.randEntryPoint(scrWidth);
     } else if (orientation == "vertical-BT") {
       start = "left";
-      bottomVal = (scrHeight + 254);
-      entry = LightShow.randEntryPoint(scrWidth) - 1;
+      bottomVal = (scrHeight + tailLength);
+      entry = LightShow.randEntryPoint(scrWidth);
     } else if (orientation == "horizontal-LR") {
       start = "top";
-      leftVal = (scrWidth + 254);
+      leftVal = (scrWidth + tailLength);
       entry = LightShow.randEntryPoint(scrHeight);
     } else if (orientation == "horizontal-RL") {
       start = "top";
-      rightVal = (scrWidth + 254);
+      rightVal = (scrWidth + tailLength);
       entry = LightShow.randEntryPoint(scrHeight);
     }
     
-    // Apply the trail to the document
-    $('#feature').append('<i id="' + id + '" class="tail ' + color + ' ' + orientation + '" style="' + start +  ': ' + entry + 'px;"></i>');
-    
-    // Increment the count
-    count++;
+    // Reuse tails already added to the document if possible.
+    // Small performance enhancement.
+    if (usedTails.length > 0) {
+      // Recover an old tail.
+      var tail = usedTails.pop();
+
+      console.log('reused');
+      id = $(tail).attr('id');
+
+      $(tail).attr('style', (start +  ': ' + entry + 'px;'));
+      $(tail).attr('class', ('tail ' + color + ' ' + orientation));
+    } else {
+      // Create a new ID
+      var id = "tail" + (count + 1);
+
+      // Increment the count
+      count++;
+
+      $('#feature').append('<i id="' + id + '" class="tail ' + color + ' ' + orientation + '" style="' + start +  ': ' + entry + 'px;"></i>');
+      console.log('created');
+    }
     
     // Animate the light trail
     $('#' + id).transition({
@@ -68,9 +85,9 @@ var LightShow = (function($) {
       bottom: '+=' + bottomVal,
       left: '+=' + leftVal,
       right: '+=' + rightVal
-    }, 5000, function() {
+    }, 6000, function() {
       // Once the light trail hits the other side remove it from the DOM
-      $(this).remove();
+      usedTails.push(this);
     });
     
     // Add a new light trail in one second

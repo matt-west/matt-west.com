@@ -1,0 +1,300 @@
+/*
+ *  Name: Matt West Portfolio Site
+ *  Version: 1.0
+ *  Author: Matt West
+ */
+
+// Variables
+$link_color: #08C
+$border_color: #EEE
+
+
+// Global Styles
+*,
+*:before,
+*:after
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+
+html
+  height: 100%
+
+body
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif
+  -webkit-font-smoothing: antialiased
+  padding: 0
+  margin: 0
+  color: #212121
+
+
+// Typography
+h1, h2, h3, h4, h5, h6
+  font-weight: bold
+
+h1
+  
+h2
+  margin: 3rem 0 0
+  font-size: 1.4rem
+  border-bottom: 1px solid $border_color
+
+h3
+  margin: 1rem 0 0
+  font-size: 1.2rem
+
+h4
+  font-size: 1rem
+
+h5, h6
+  font-size: 1rem
+
+p
+  font-size: 0.9rem
+  line-height: 1.4rem
+
+// Links
+
+a,
+a:visited
+  color: $link_color
+  text-decoration: none
+
+  &:hover,
+  &:focus
+    text-decoration: underline
+
+
+// Buttons
+
+a.btn
+  display: inline-block
+  *display: inline
+  padding: 0.5rem 0.75rem
+  font-size: 0.9rem
+  border-radius: 5px
+  border: 1px solid $border_color
+  background: #F7F7F7
+
+  &:hover,
+  &:focus
+    text-decoration: none
+
+a.btn-center
+  margin: 0 auto
+
+a.btn-blue
+  background: #63b6db
+  background: -moz-linear-gradient(top,  #63b6db 0%, #309dcf 100%)
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#63b6db), color-stop(100%,#309dcf))
+  background: -webkit-linear-gradient(top,  #63b6db 0%,#309dcf 100%)
+  background: -o-linear-gradient(top,  #63b6db 0%,#309dcf 100%)
+  background: -ms-linear-gradient(top,  #63b6db 0%,#309dcf 100%)
+  background: linear-gradient(to bottom,  #63b6db 0%,#309dcf 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#63b6db', endColorstr='#309dcf',GradientType=0 )
+  border-color: #0090CE
+  color: #FFF
+
+  &:hover,
+  &:focus
+    background: #309dcf
+
+  &:active
+    background: #0090CE
+
+
+
+// Layout
+
+.container
+  max-width: 1000px
+  margin: 0 auto
+  padding: 1.5rem
+
+  &.no-padding
+    padding: 0
+
+.col
+  width: 50%
+  float: left
+  padding: 0 1.5rem
+
+
+// Header
+
+header
+  border-bottom: 1px solid $border_color
+
+#logo
+  float: left
+  font-weight: bold
+
+  a,
+  a:visited
+    color: #212121
+
+    &:hover,
+    &:focus
+      text-decoration: none
+      color: $link_color
+
+  .title
+    font-weight: normal
+    color: #999
+    font-size: 0.9rem
+
+nav
+  float: right
+
+  ul
+    margin: 0
+    padding: 0.55rem 0 0
+    list-style: none
+
+    li
+      display: inline-block
+      *display: inline
+      padding-left: 1rem
+
+      a,
+      a:visited
+        font-size: 0.75rem
+        text-transform: uppercase
+        letter-spacing: 1px
+        color: #000
+        font-weight: bold
+
+        &:hover,
+        &:focus
+          color: $link_color
+          text-decoration: none
+
+        &.current
+          color: #08C
+
+
+// Home: Feature
+
+#feature
+  background: url('../img/cube.png')
+  border-bottom: 1px solid $border_color
+  position: relative
+  overflow: hidden
+  box-shadow: 0 0 100px rgba(0,0,0,0.5) inset
+
+#avatar
+  display: block
+  height: 11rem
+  width: 11rem
+  border-radius: 5.5rem
+  margin: 1.9rem auto
+  position: relative
+  z-index: 999
+  border: 3px solid #FFF
+  box-shadow: 0 0 10px rgba(0,0,0,1)
+
+
+// Home: Content
+
+.exp-title, .exp-duration
+  color: #999
+  font-size: 0.9rem
+
+.exp-title
+  float: left
+
+.exp-duration
+  float: right
+
+.skill-title
+  float: left
+
+  .speciality
+    color: #FFF
+    font-size: 0.6rem
+    vertical-align: top
+    font-weight: bold
+    padding: 0.1rem 0.25rem
+    margin-left: 0.25rem
+    background: #008600
+    border-radius: 2px
+    text-transform: uppercase
+
+.skill-duration
+  float: right
+  color: #999
+
+#show-experience
+  display: block
+  width: 170px
+
+
+// Footer
+
+footer
+  color: #999
+  text-align: center
+  font-size: .9rem
+
+
+
+// Clearfix Utils
+
+.clearfix
+  *zoom: 1
+
+.clearfix:before,
+.clearfix:after
+  display: table
+  line-height: 0
+  content: ""
+
+.clearfix:after
+  clear: both
+
+@media only screen and (orientation : portrait)
+  h2
+    margin: 2rem 0 0
+
+@media only screen and (orientation : landscape)
+  h2
+    margin: 2rem 0 0
+
+@media only screen and (max-width : 699px)
+  h2
+    margin: 2rem 0 0
+
+  .col
+    width: auto
+    float: none
+
+@media only screen and (max-width : 559px)
+  h2
+    margin: 1.5rem 0 0
+
+  .container
+    padding: 1rem
+
+  .col
+    padding: 0 1rem
+
+  #logo
+    text-align: center
+    float: none
+
+  nav
+    float: none
+    text-align: center
+
+    ul
+
+      li
+        padding: 0 0.25rem
+
+        a,
+        a:visited
+          letter-spacing: 0
+
+  #avatar
+    height: 8rem
+    width: 8rem

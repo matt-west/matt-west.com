@@ -85,7 +85,7 @@ var LightShow = (function($) {
       bottom: '+=' + bottomVal,
       left: '+=' + leftVal,
       right: '+=' + rightVal
-    }, 6000, function() {
+    }, 7000, function() {
       // Once the light trail hits the other side remove it from the DOM
       usedTails.push(this);
     });

@@ -18,6 +18,10 @@ $yellow: #fff601
   background: linear-gradient(to right, $color -30%,rgba(255,255,255,0) 100%)
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color', endColorstr='#00ffffff',GradientType=1 )
 
+@mixin boxShadow($color)
+  -webkit-box-shadow: 0 0 10px $color
+  box-shadow: 0 0 10px $color
+
 .tail
   width: 10px
   height: 10px
@@ -33,28 +37,28 @@ $yellow: #fff601
 
 .REDtail
   background: $red
-  box-shadow: 0 0 10px $red
+  @include boxShadow($red)
 
   &::after
     @include gradToTransparent($red)
 
 .GREENtail
   background: $green
-  box-shadow: 0 0 10px $green
+  @include boxShadow($green)
 
   &::after
     @include gradToTransparent($green)
 
 .YELLOWtail
   background: $yellow
-  box-shadow: 0 0 10px $yellow
+  @include boxShadow($yellow)
 
   &::after
     @include gradToTransparent($yellow)
 
 .BLUEtail
   background: $blue
-  box-shadow: 0 0 10px $blue
+  @include boxShadow($blue)
 
   &::after
     @include gradToTransparent($blue)

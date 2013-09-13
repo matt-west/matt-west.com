@@ -10,7 +10,7 @@ var LightShow = (function($) {
   var count = 0;
   var scrWidth;
   var scrHeight;
-  var tailLength = 190;
+  var tailLength = 185;
   var usedTails = [];
 
   // Constructor
@@ -102,7 +102,7 @@ var LightShow = (function($) {
    *  @return randomNumber  The entry point
    */
   LightShow.randEntryPoint= function(max) {
-    return (Math.floor((Math.random()*max / 10)) * 10);
+    return (Math.floor((Math.random()*max / 5)) * 5);
   };
 
 

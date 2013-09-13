@@ -4,10 +4,11 @@
  *  Author: Matt West
  */
 
-$red: #ff0000
-$green: #01ff1f
-$blue: #0107ff
-$yellow: #fff601
+$red: #e61863
+$green: #18e69b
+$blue: #18CAE6 // Tron Blue
+// $blue: #0000FF
+$yellow: #cae618
 
 @mixin gradToTransparent($color)
   background: -moz-linear-gradient(left, $color -30%, rgba(255,255,255,0) 100%)
@@ -23,14 +24,14 @@ $yellow: #fff601
   box-shadow: 0 0 10px $color
 
 .tail
-  width: 10px
-  height: 10px
+  width: 5px
+  height: 5px
 
   &::after
     content: ''
     position:absolute
     display: block
-    height: 10px
+    height: 5px
     width: 180px
     right: 0
     top: 0

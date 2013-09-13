@@ -5,7 +5,7 @@
  */
 
 // Variables
-$link_color: #08C
+$link_color: #e61863
 $border_color: #EEE
 
 
@@ -126,6 +126,10 @@ a.btn-blue
 header
   border-bottom: 1px solid $border_color
 
+body.home
+  header
+    border: 0
+
 #logo
   float: left
   font-weight: bold
@@ -171,14 +175,13 @@ nav
           text-decoration: none
 
         &.current
-          color: #08C
+          color: $link_color
 
 
 // Home: Feature
 
 #feature
-  background: url('../img/cube.png')
-  border-bottom: 1px solid $border_color
+  background: url('../img/cube-small.png')
   position: relative
   overflow: hidden
   box-shadow: 0 0 100px rgba(0,0,0,0.5) inset
@@ -188,11 +191,11 @@ nav
   height: 11rem
   width: 11rem
   border-radius: 5.5rem
-  margin: 1.9rem auto
+  margin: 2.05rem auto
   position: relative
   z-index: 999
   border: 3px solid #FFF
-  box-shadow: 0 0 10px rgba(0,0,0,1)
+  box-shadow: 0 0 10px #000
 
 
 // Home: Content
@@ -217,7 +220,7 @@ nav
     font-weight: bold
     padding: 0.1rem 0.25rem
     margin-left: 0.25rem
-    background: #008600
+    background: $link_color
     border-radius: 2px
     text-transform: uppercase
 

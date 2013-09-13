@@ -7,20 +7,25 @@
 *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased; }
 
 html {
   height: 100%; }
 
 body {
   font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
   padding: 0;
   margin: 0;
   color: #212121; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold; }
+
+h1 {
+  text-align: center;
+  margin: 2rem auto 0 auto !important;
+  font-size: 2.4rem; }
 
 h2 {
   margin: 3rem 0 0;
@@ -43,43 +48,61 @@ p {
 
 a,
 a:visited {
-  color: #e61863;
+  color: #0088cc;
   text-decoration: none; }
   a:hover, a:focus,
   a:visited:hover,
   a:visited:focus {
     text-decoration: underline; }
 
-a.btn {
+.btn,
+.btn:visited {
   display: inline-block;
   *display: inline;
-  padding: 0.5rem 0.75rem;
+  padding: 0.6rem 0.9rem;
   font-size: 0.9rem;
-  border-radius: 5px;
-  border: 1px solid #eeeeee;
-  background: #f7f7f7;
+  font-weight: normal;
+  border: 0;
+  background: #0088cc;
+  color: white;
   text-align: center; }
-  a.btn:hover, a.btn:focus {
+  .btn:hover, .btn:focus,
+  .btn:visited:hover,
+  .btn:visited:focus {
     text-decoration: none; }
 
-a.btn-center {
+.btn-center {
   margin: 0 auto; }
 
-a.btn-blue {
-  background: #63b6db;
-  background: -moz-linear-gradient(top, #63b6db 0%, #309dcf 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #63b6db), color-stop(100%, #309dcf));
-  background: -webkit-linear-gradient(top, #63b6db 0%, #309dcf 100%);
-  background: -o-linear-gradient(top, #63b6db 0%, #309dcf 100%);
-  background: -ms-linear-gradient(top, #63b6db 0%, #309dcf 100%);
-  background: linear, to bottom, #63b6db 0%, #309dcf 100%;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#63b6db', endColorstr='#309dcf',GradientType=0 );
-  border-color: #0090ce;
-  color: white; }
-  a.btn-blue:hover, a.btn-blue:focus {
-    background: #309dcf; }
-  a.btn-blue:active {
-    background: #0090ce; }
+.btn-blue:hover, .btn-blue:focus {
+  background: #309dcf; }
+.btn-blue:active {
+  background: #0090ce; }
+
+form .field {
+  margin: 1rem 0; }
+  form .field label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem; }
+form .select-field label {
+  display: inline; }
+form .select-field select {
+  margin-left: 0.25rem; }
+form input,
+form textarea {
+  width: 100%;
+  border: 1px solid #eeeeee;
+  padding: 0.5rem 0.5rem; }
+  form input:focus,
+  form textarea:focus {
+    outline: none;
+    border-color: #999999; }
+form .required {
+  color: #cc0000; }
+form .required-note {
+  float: right;
+  font-size: 0.9rem; }
 
 .container {
   max-width: 1000px;
@@ -109,7 +132,7 @@ body.home header {
     #logo a:visited:hover,
     #logo a:visited:focus {
       text-decoration: none;
-      color: #e61863; }
+      color: #0088cc; }
   #logo .title {
     font-weight: normal;
     color: #999999;
@@ -135,11 +158,11 @@ nav {
         nav ul li a:hover, nav ul li a:focus,
         nav ul li a:visited:hover,
         nav ul li a:visited:focus {
-          color: #e61863;
+          color: #0088cc;
           text-decoration: none; }
         nav ul li a.current,
         nav ul li a:visited.current {
-          color: #e61863; }
+          color: #0088cc; }
 
 #feature {
   background: url(../img/cube-small.png);
@@ -177,7 +200,7 @@ nav {
     font-weight: bold;
     padding: 0.1rem 0.25rem;
     margin-left: 0.25rem;
-    background: #e61863;
+    background: #0088cc;
     border-radius: 2px;
     text-transform: uppercase; }
 
@@ -187,7 +210,7 @@ nav {
 
 #show-experience {
   display: block;
-  width: 180px; }
+  width: 220px; }
 
 footer {
   color: #999999;

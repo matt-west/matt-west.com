@@ -1,42 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  
+<?php
+	$title = "Hire Matt West - Freelance Developer";
 
-  <script type="text/javascript" src="//use.typekit.net/zft7azi.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-  
-  <link rel='stylesheet' href='c08ffe2218b0f588b656a51d5e932619.css'>
-  <script src='732a662e5e128a5b0511210713f2743f.js'></script>
-  
-  <link href="assets/favicon.ico" rel="shortcut icon">
-  <link href="assets/apple-touch-icon.png" rel="apple-touch-icon">
-  
-  <title>Hire Matt West - Freelance Developer</title>
-  
-</head>
-
-<body class="">
-
-  <header>
-    <div class="container clearfix">
-      <div id="logo">
-        <div><a href="index.html">Matt West</a></div>
-        <div class="title">Freelance Web Developer</div>
-      </div>
-      <nav>
-	<ul class="clearfix">
-		<li><a href="index.html">About Matt</a></li>
-		<!--<li><a href="portfolio.html">Portfolio</a></li>-->
-		<li class='current'><a class='current' href="hire-me.html">Hire Me</a></li>
-		<li><a href="http://blog.matt-west.com" target="_blank">Blog</a></li>
-	</ul>
-</nav>
-    </div>
-  </header>
+	require_once('templates/_header.php');
+?>
 
 <section id="hire-me" class="clearfix">
 	<h1 class="container">Hire Me</h1>
@@ -46,7 +12,7 @@
 		<div class="col">
 			<h2>Availability</h2>
 			<p>
-				I am currently <strong>available</strong> for new projects starting in <strong>October 2013</strong>.
+				I am currently <strong>available</strong> for new projects starting in <strong>December 2013</strong>.
 			</p>
 			<p>
 				Please use the enquiry form on this page to contact me about future projects. I aim to reply within one working day.
@@ -130,25 +96,4 @@
 
 </section>
 
-	<footer>
-		<div class="container clearfix">
-			&copy; 2013 Matt West.
-		</div>
-	</footer>
-
-
-	<script type="text/javascript">
-
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-27571908-1']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
-  </script>
-</body>
-</html>
+<?php require_once('templates/_footer.php'); ?>

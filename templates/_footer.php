@@ -4,6 +4,14 @@
 		</div>
 	</footer>
 
+  <?php
+    if ($_SERVER['SERVER_NAME'] == "mattwest.dev") {
+      echo "<script src='http://mattwest.dev:3000/socket.io/socket.io.js'></script>";
+      echo "<script src='http://mattwest.dev:3001/browser-sync-client.min.js'></script>";
+    }
+  ?>
+
+  <script src="/assets/js/build/global.min.js"></script>
 
 	<script type="text/javascript">
 

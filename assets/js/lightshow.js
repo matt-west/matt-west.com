@@ -31,6 +31,7 @@ var LightShow = (function($) {
     var color = LightShow.randColor();
     var orientation = LightShow.randOrientation();
     var entry = 0;
+    var id;
     
     // Initialise position values
     var topVal = '';
@@ -39,20 +40,20 @@ var LightShow = (function($) {
     var rightVal = '';
     
     // Calculate the entry points and set the variables
-    if (orientation == "vertical-TB") {
-      start = "left";
+    if (orientation == 'vertical-TB') {
+      start = 'left';
       topVal = scrHeight + tailLength;
       entry = LightShow.randEntryPoint(scrWidth);
-    } else if (orientation == "vertical-BT") {
-      start = "left";
+    } else if (orientation == 'vertical-BT') {
+      start = 'left';
       bottomVal = (scrHeight + tailLength);
       entry = LightShow.randEntryPoint(scrWidth);
-    } else if (orientation == "horizontal-LR") {
-      start = "top";
+    } else if (orientation == 'horizontal-LR') {
+      start = 'top';
       leftVal = (scrWidth + tailLength);
       entry = LightShow.randEntryPoint(scrHeight);
-    } else if (orientation == "horizontal-RL") {
-      start = "top";
+    } else if (orientation == 'horizontal-RL') {
+      start = 'top';
       rightVal = (scrWidth + tailLength);
       entry = LightShow.randEntryPoint(scrHeight);
     }
@@ -70,7 +71,7 @@ var LightShow = (function($) {
       $(tail).attr('class', ('tail ' + color + ' ' + orientation));
     } else {
       // Create a new ID
-      var id = "tail" + (count + 1);
+      id = 'tail' + (count + 1);
 
       // Increment the count
       count++;
@@ -91,7 +92,7 @@ var LightShow = (function($) {
     });
     
     // Add a new light trail in one second
-    setTimeout("LightShow.genLightTrail()", 1000);
+    setTimeout(LightShow.genLightTrail, 1000);
   };
 
 

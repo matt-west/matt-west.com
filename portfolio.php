@@ -1,5 +1,8 @@
-<!-- $title Portfolio - Matt West - Freelance Developer -->
-<!-- @include _header -->
+<?php
+	$title = "Portfolio - Matt West - Freelance Developer";
+
+	require_once('templates/_header.php');
+?>
 
 <section id="portfolio" class="clearfix">
 
@@ -36,8 +39,6 @@
 
 	</div>
 
-	<!-- @todo Add portfolio items -->
-
 </section>
 
-<!-- @include _footer -->
+<?php require_once('templates/_footer.php'); ?>

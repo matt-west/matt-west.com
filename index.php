@@ -1,10 +1,13 @@
-<!-- $title Matt West - Freelance Web Developer -->
-<!-- $bodyClass home -->
-<!-- @include _header -->
+<?php
+	$title = "Matt West - Freelance Developer";
+	$bodyClass = "home";
+
+	require_once('templates/_header.php');
+?>
 
   <div id="feature">
     <div class="container clearfix">
-    	<img src="<!-- @path matt-west.jpg -->" alt="Matt West" id="avatar">
+    	<img src="/assets/img/matt-west.jpg" alt="Matt West" id="avatar">
     </div>
   </div>
 
@@ -22,18 +25,18 @@
 
 	  		<h2>Skills</h2>
   			<p class="skill clearfix">
-					<span class="skill-title">HTML5 <span class="speciality">Speciality</span></span>
-					<span class="skill-duration">3 Years</span>
+					<span class="skill-title">HTML(5)</span>
+					<span class="skill-duration">4 Years</span>
 				</p>
 
 				<p class="skill clearfix">
 					<span class="skill-title">CSS3</span>
-					<span class="skill-duration">3 Years</span>
+					<span class="skill-duration">4 Years</span>
 				</p>
 
 				<p class="skill clearfix">
 					<span class="skill-title">JavaScript</span>
-					<span class="skill-duration">3 Years</span>
+					<span class="skill-duration">4 Years</span>
 				</p>
 
 				<p class="skill clearfix">
@@ -43,7 +46,7 @@
 
 				<p class="skill clearfix">
 					<span class="skill-title">PHP</span>
-					<span class="skill-duration">2 Years</span>
+					<span class="skill-duration">3 Years</span>
 				</p>
 
 				<p class="skill clearfix">
@@ -150,7 +153,5 @@
   	</div>
 
   </section>
-
-  <script src="<!-- @path lightshow.js -->"></script>
   
-<!-- @include _footer -->
+<?php require_once('templates/_footer.php'); ?>

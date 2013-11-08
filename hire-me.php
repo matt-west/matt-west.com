@@ -12,7 +12,7 @@
 		<div class="col">
 			<h2>Availability</h2>
 			<p>
-				I am currently <strong>available</strong> for new projects starting in <strong>December 2013</strong>.
+				I am currently <strong>available</strong> for new projects starting in <strong>mid December 2013</strong>.
 			</p>
 			<p>
 				Please use the enquiry form on this page to contact me about future projects. I aim to reply within one working day.

@@ -12,9 +12,9 @@ var MWPortfolio = (function($) {
   // Constructor
   var MWPortfolio = function () {
     // Hide Past Experience.
-    $('#past-experience').hide();
+//    $('#past-experience').hide();
     
-    MWPortfolio.attachObservers();
+//    MWPortfolio.attachObservers();
   };
   
   // Event Listeners

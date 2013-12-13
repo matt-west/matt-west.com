@@ -40,7 +40,7 @@
           <h2>HTML5 Foundations</h2>
           <a href="http://www.amazon.co.uk/gp/product/1118356551/ref=as_li_ss_tl?ie=UTF8&amp;camp=1634&amp;creative=19450&amp;creativeASIN=1118356551&amp;linkCode=as2&amp;tag=codingskyscr-21" title="HTML5 Foundations by Matt West" class="buy-book-img" target="_blank"><img src="assets/img/html5foundations_cover.png" alt="HTML5 Foundations" width="110"></a>
           <p>
-            HTML5 Foundations covers all the basics as well as some more advanced topics like GeoLocation and Canvas. Order your copy today!
+            HTML5 Foundations covers the basics of web design as well as some more advanced topics like GeoLocation and Canvas. Order your copy today!
           </p>
           <a href="http://www.amazon.co.uk/gp/product/1118356551/ref=as_li_ss_tl?ie=UTF8&amp;camp=1634&amp;creative=19450&amp;creativeASIN=1118356551&amp;linkCode=as2&amp;tag=codingskyscr-21" title="HTML5 Foundations by Matt West" class="buy-book" target="_blank">Buy HTML5 Foundations</a>
         </section>

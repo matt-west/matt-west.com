@@ -23,7 +23,7 @@
     <div class="container clearfix">
       <div id="logo">
         <div><a href="/">Matt West</a></div>
-        <div class="title">Freelance Web Developer</div>
+        <div class="title">Web Developer & Tech Writer</div>
       </div>
       <?php require_once('_nav.php') ?>
     </div>

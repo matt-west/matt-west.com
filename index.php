@@ -19,42 +19,30 @@
           <h2>About Me</h2>
           <p>
             I'm a freelance developer and writer from England. These days I can usually be found coding some sweet HTML5 goodness, or writing technical articles for the <a href="http://blog.teamtreehouse.com/author/mattwest">Treehouse Blog</a>.
-          <p>
-            In 2012 I was given the opportunty to work with some really brilliant people and write a book about web design. The result was <a href="http://html5foundations.com" target="_blank">HTML5 Foundations</a>. You can grab a copy at <a href="http://www.amazon.co.uk/gp/product/1118356551/ref=as_li_ss_tl?ie=UTF8&amp;camp=1634&amp;creative=19450&amp;creativeASIN=1118356551&amp;linkCode=as2&amp;tag=codingskyscr-21" title="HTML5 Foundations by Matt West" target="_blank">Amazon</a> and most good book stores.
           </p>
+          <p>
+            In 2012 I was given the opportunty to work with some really brilliant people and write a book about web design. The result was <a href="http://html5foundations.com" target="_blank">HTML5 Foundations</a>.
+          </p>
+          <ul class="social-icons">
+            <li><a href="https://twitter.com/MattAntWest" target="_blank"><img src="assets/img/social-icons/01_twitter.png" alt="Matt West on Twitter"></a></li>
+            <li><a href="https://www.facebook.com/mattantwest" target="_blank"><img src="assets/img/social-icons/02_facebook.png" alt="Matt West on Facebook"></a></li>
+            <li><a href="https://plus.google.com/103780700566333678292/posts" target="_blank"><img src="assets/img/social-icons/14_google+.png" alt="Matt West on Google+"></a></li>
+            <li><a href="http://mattantwest.tumblr.com" target="_blank"><img src="assets/img/social-icons/15_tumblr.png" alt="Matt West on tumblr"></a></li>
+            <li><a href="http://instagram.com/mattantwest" target="_blank"><img src="assets/img/social-icons/10_instagram.png" alt="Matt West on Instagram"></a></li>
+            <li><a href="http://www.youtube.com/user/mattantwest" target="_blank"><img src="assets/img/social-icons/03_youtube.png" alt="Matt West on Youtube"></a></li>
+            <li><a href="http://www.pinterest.com/mattantwest/" target="_blank"><img src="assets/img/social-icons/13_pinterest.png" alt="Matt West on Pinterest"></a></li>
+            <li><a href="http://uk.linkedin.com/in/mattantwest" target="_blank"><img src="assets/img/social-icons/07_linkedin.png" alt="Matt West on LinkedIn"></a></li>
+            <li><a href="http://www.behance.net/mattantwest" target="_blank"><img src="assets/img/social-icons/08_behance.png" alt="Matt West on Behance"></a></li>
+          </li>
         </section>
 
-	  	  <section>
-          <h2>Skills</h2>
-          <p class="skill clearfix">
-            <span class="skill-title">HTML5</span>
-            <span class="skill-duration">4 Years</span>
+	  	  <section id="book" class="clearfix">
+          <h2>HTML5 Foundations</h2>
+          <a href="http://www.amazon.co.uk/gp/product/1118356551/ref=as_li_ss_tl?ie=UTF8&amp;camp=1634&amp;creative=19450&amp;creativeASIN=1118356551&amp;linkCode=as2&amp;tag=codingskyscr-21" title="HTML5 Foundations by Matt West" class="buy-book-img" target="_blank"><img src="assets/img/html5foundations_cover.png" alt="HTML5 Foundations" width="110"></a>
+          <p>
+            HTML5 Foundations covers all the basics as well as some more advanced topics like GeoLocation and Canvas. Order your copy today!
           </p>
-  
-          <p class="skill clearfix">
-            <span class="skill-title">CSS3</span>
-            <span class="skill-duration">4 Years</span>
-          </p>
-  
-          <p class="skill clearfix">
-            <span class="skill-title">JavaScript</span>
-            <span class="skill-duration">4 Years</span>
-          </p>
-  
-          <p class="skill clearfix">
-            <span class="skill-title">Ruby on Rails</span>
-            <span class="skill-duration">2 Years</span>
-          </p>
-  
-          <p class="skill clearfix">
-            <span class="skill-title">PHP</span>
-            <span class="skill-duration">3 Years</span>
-          </p>
-  
-          <p class="skill clearfix">
-            <span class="skill-title">Go</span>
-            <span class="skill-duration">1 Year</span>
-          </p>
+          <a href="http://www.amazon.co.uk/gp/product/1118356551/ref=as_li_ss_tl?ie=UTF8&amp;camp=1634&amp;creative=19450&amp;creativeASIN=1118356551&amp;linkCode=as2&amp;tag=codingskyscr-21" title="HTML5 Foundations by Matt West" class="buy-book" target="_blank">Buy HTML5 Foundations</a>
         </section>
 
 	  	  <section class="no-margin">

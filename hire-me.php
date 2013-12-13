@@ -32,19 +32,6 @@
           Sublime Text and iTerm are my tools of choice.
         </p>
       </section>
-
-		  <section class="no-margin">
-        <h2>Rates</h2>
-        <p>
-          My hourly rate is <strong>&pound;40 + VAT</strong>.
-        </p>
-        <p>
-          Full days (8 hours) are charged at <strong>&pound;320 + VAT</strong>.
-        </p>
-        <p>
-          * Customers outside Europe may not be charged VAT.
-        </p>
-      </section>
 		</div>
 
 		<div class="col">

@@ -1,5 +1,5 @@
 <?php
-	$title = "Matt West - Freelance Developer";
+	$title = "Matt West - Entrepreneur, Developer, and Writer";
 	$bodyClass = "home";
 
 	require_once('templates/_header.php');

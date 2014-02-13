@@ -1,5 +1,5 @@
 <?php
-	$title = "Portfolio - Matt West - Freelance Developer";
+	$title = "Portfolio - Matt West - Developer and Writer";
 
 	require_once('templates/_header.php');
 ?>

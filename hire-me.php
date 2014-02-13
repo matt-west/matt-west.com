@@ -13,7 +13,7 @@
 			<section class="no-top-margin">
         <h2>Availability</h2>
         <p>
-          I am currently <strong>available</strong> for new projects starting in <strong>January 2014</strong>.
+          I am currently <strong>not available</strong> for new projects.
         </p>
         <p>
           Please use the enquiry form on this page to contact me about future projects. I aim to reply within one working day.

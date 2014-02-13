@@ -18,7 +18,7 @@
   			<section>
           <h2>About Me</h2>
           <p>
-            I'm a freelance developer and writer from England. These days I can usually be found coding some sweet HTML5 goodness, or writing technical articles for the <a href="http://blog.teamtreehouse.com/author/mattwest">Treehouse Blog</a>.
+            I'm an entrepreneur, developer, and writer from England. These days I can usually be found working on my startup <a href="http://kojilabs.com" target="_blank">Koji Labs</a>, or writing technical articles for the <a href="http://blog.teamtreehouse.com/author/mattwest">Treehouse Blog</a>.
           </p>
           <p>
             In 2012 I was given the opportunty to work with some really brilliant people and write a book about web design. The result was <a href="http://html5foundations.com" target="_blank">HTML5 Foundations</a>.
@@ -79,11 +79,27 @@
             <span class="exp-duration">Jan 2013 - Present</span>
           </div>
           <p>
-            Koji Labs is exploring new ways that technology can help to revolutionize stagnant industries.
+            Koji Labs is creating new ways to discover content by leveraging the power of your social feeds.
           </p>
           <p>
-            Nothing to announce just yet but <a href="http://kojilabs.com" target="_blank">sign up to our newsletter</a> and we'll keep you posted.
+            Sign up to the mailing list for updates.
           </p>
+          <!-- Begin MailChimp Signup Form -->
+          <div id="mc_embed_signup">
+            <form action="http://kojilabs.us4.list-manage.com/subscribe/post?u=f8cbddda8612357bfc16b352d&amp;id=03899de608" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div class="mc-field-group">
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email Address">
+              </div>
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;"><input type="text" name="b_f8cbddda8612357bfc16b352d_03899de608" value=""></div>
+            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+          </form>
+          </div>
+
+          <!--End mc_embed_signup-->
         </section>
         
         <section id="past-projects" class="no-margin">

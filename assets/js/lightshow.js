@@ -63,8 +63,6 @@ var LightShow = (function($) {
     if (usedTails.length > 0) {
       // Recover an old tail.
       var tail = usedTails.pop();
-
-      console.log('reused');
       id = $(tail).attr('id');
 
       $(tail).attr('style', (start +  ': ' + entry + 'px;'));
@@ -77,7 +75,6 @@ var LightShow = (function($) {
       count++;
 
       $('#feature').append('<i id="' + id + '" class="tail ' + color + ' ' + orientation + '" style="' + start +  ': ' + entry + 'px;"></i>');
-      console.log('created');
     }
     
     // Animate the light trail

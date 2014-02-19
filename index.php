@@ -70,8 +70,20 @@
   		</div>
 
   		<div class="col">
-  			<section>
+  			<section id="current-projects">
           <h2>Current Projects</h2>
+
+          <h3 class="no-top-margin"><a href="http://kojitsu.com" target="_blank">Kojitsu</a></h3>
+          <div class="clearfix">
+            <span class="exp-title">Founder</span>
+            <span class="exp-duration">Jan 2014 - Present</span>
+          </div>
+          <p>
+            Kojitsu is the first product from Koji Labs. The app monitors your Twitter and Facebook feeds and gives you the ten best links shared by your friends.
+          </p>
+          <p>
+            Kojitsu is currently in closed beta. You can request an invite on <a href="http://kojitsu.com">kojitsu.com</a>.
+          </p>
   
           <h3><a href="http://kojilabs.com" target="_blank">Koji Labs</a></h3>
           <div class="clearfix">

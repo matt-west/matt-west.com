@@ -1,6 +1,6 @@
 	<footer>
 		<div class="container clearfix">
-			&copy; 2013 Matt West.
+			&copy; 2014 Matt West.
 		</div>
 	</footer>
 

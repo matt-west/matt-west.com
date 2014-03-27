@@ -1,5 +1,5 @@
 <?php
-	$title = "Matt West - Entrepreneur, Developer, and Writer";
+	$title = "Matt West - Entrepreneur and Web Developer";
 	$bodyClass = "home";
 
 	require_once('templates/_header.php');
@@ -18,7 +18,7 @@
   			<section>
           <h2>About Me</h2>
           <p>
-            I'm an entrepreneur, developer, and writer from England. These days I can usually be found working on my startup <a href="http://kojilabs.com" target="_blank">Koji Labs</a>, or writing technical articles for the <a href="http://blog.teamtreehouse.com/author/mattwest">Treehouse Blog</a>.
+            I'm an entrepreneur and web developer from England. These days I can usually be found working on my startup <a href="http://kojilabs.com" target="_blank">Koji Labs</a>, or writing technical articles for the <a href="http://blog.teamtreehouse.com/author/mattwest">Treehouse Blog</a>.
           </p>
           <p>
             In 2012 I was given the opportunty to work with some really brilliant people and write a book about web design. The result was <a href="http://html5foundations.com" target="_blank">HTML5 Foundations</a>.
@@ -47,19 +47,19 @@
 
 	  	  <section class="no-margin">
           <h2>Writing</h2>
-          
+
           <h3><a href="http://html5foundations.com" target="_blank">HTML5 Foundations</a></h3>
           <div class="clearfix">
             <span class="exp-title">Author</span>
             <span class="exp-duration">Published by Wiley, Nov 2012</span>
           </div>
-  
+
           <h3><a href="http://blog.teamtreehouse.com/author/mattwest" target="_blank">Treehouse Blog</a></h3>
           <div class="clearfix">
             <span class="exp-title">Writer</span>
             <span class="exp-duration">Nov 2012 - Present</span>
           </div>
-  
+
           <h3><a href="http://blog.matt-west.com" target="_blank">Personal Blog</a></h3>
           <div class="clearfix">
             <span class="exp-title">Writer</span>
@@ -84,7 +84,7 @@
           <p>
             Kojitsu is currently in closed beta. You can request an invite on <a href="http://kojitsu.com">kojitsu.com</a>.
           </p>
-  
+
           <h3><a href="http://kojilabs.com" target="_blank">Koji Labs</a></h3>
           <div class="clearfix">
             <span class="exp-title">Founder</span>
@@ -113,10 +113,10 @@
 
           <!--End mc_embed_signup-->
         </section>
-        
+
         <section id="past-projects" class="no-margin">
           <h2>Past Projects</h2>
-  
+
           <h3 class="no-top-margin"><a href="http://wlco.me" target="_blank">wlcome</a></h3>
           <div class="clearfix">
             <span class="exp-title">Developer &amp; Designer</span>
@@ -128,7 +128,7 @@
           <p>
             This position involved using HTML5, CSS3, JavaScript, PHP, WordPress and Go.
           </p>
-  
+
           <h3><a href="http://developercity.co.uk" target="_blank">Developer City</a></h3>
           <div class="clearfix">
             <span class="exp-title">Founder</span>
@@ -140,13 +140,13 @@
           <p>
             In 2013 I decided to shut down Developer City so that I could focus on Koji Labs and later wlcome.
           </p>
-  
+
           <h3><a href="http://thisweeksoffers.com" target="_blank">This Week's Offers</a></h3>
           <div class="clearfix">
             <span class="exp-title">Technical Co-Founder</span>
             <span class="exp-duration">Jan 2012 - Dec 2012</span>
           </div>
-  
+
           <h3>Computer Solutions TSG Limited</h3>
           <div class="clearfix">
             <span class="exp-title">Sales &amp; Technical Support</span>
@@ -157,5 +157,5 @@
   	</div>
 
   </section>
-  
+
 <?php require_once('templates/_footer.php'); ?>

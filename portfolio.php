@@ -1,5 +1,5 @@
 <?php
-	$title = "Portfolio - Matt West - Developer and Writer";
+	$title = "Portfolio - Matt West - Entrepreneur and Web Developer";
 
 	require_once('templates/_header.php');
 ?>
@@ -33,7 +33,7 @@
 				<img src="/assets/img/portfolio/lovehatefilms.png" alt="Love Hate Films Website">
 			</div>
 		</div>
-		
+
 		<div class="portfolio-item clearfix">
 			<div class="col">
 				<h2>HTML5 Foundations</h2>
@@ -54,7 +54,7 @@
 				<img src="/assets/img/portfolio/html5foundations.png" alt="HTML5 Foundations">
 			</div>
 		</div>
-		
+
 		<div class="portfolio-item clearfix">
 			<div class="col">
 				<h2>wlcome</h2>
@@ -65,7 +65,7 @@
           The design and development was undertaken by myself.
           Copywriting and information architecture was completed in conjunction with the team at wlcome.
         </p>
-        <p>   
+        <p>
           This project involved: HTML5, CSS3, JavaScript, Responsive Design and GO.
 				</p>
 				<p>

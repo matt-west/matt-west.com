@@ -55,7 +55,7 @@
           </div>
           
           <h3><a href="http://blog.postach.io" target="_blank">Postach.io Blog</a></h3>
-          <div clas="clearfix">
+          <div class="clearfix">
             <span class="exp-title">Writer</span>
             <span class="exp-duration">Mar 2014 - Present</span>
           </div>

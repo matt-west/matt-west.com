@@ -54,10 +54,10 @@
             <span class="exp-duration">Published by Wiley, Nov 2012</span>
           </div>
           
-          <h3><a href="http://blog.postach.io" target="_blank">Postach.io</a> & <a href="http://blog.quoterobot.com" target="_blank">QuoteRobot</a> Blogs</h3>
+          <h3><a href="http://blog.postach.io" target="_blank">Postach.io Blog</a></h3>
           <div clas="clearfix">
             <span class="exp-title">Writer</span>
-            <span class="">Mar 2014 - Present</span>
+            <span class="exp-duration">Mar 2014 - Present</span>
           </div>
 
           <h3><a href="http://blog.teamtreehouse.com/author/mattwest" target="_blank">Treehouse Blog</a></h3>

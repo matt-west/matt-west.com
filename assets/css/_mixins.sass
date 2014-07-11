@@ -1,0 +1,16 @@
+@mixin border-radius($radius)
+  -webkit-border-radius: $radius
+  border-radius: $radius
+  background-clip: padding-box
+
+@mixin box-shadow($vars)
+  -webkit-box-shadow: $vars
+  -moz-box-shadow: $vars
+  box-shadow: $vars
+
+@mixin transform($vars)
+  -webkit-transform: $vars
+  -moz-transform: $vars
+  -ms-transform: $vars
+  -o-transform: $vars
+  transform: $vars

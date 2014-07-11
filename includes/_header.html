@@ -7,17 +7,19 @@
   <script type="text/javascript" src="//use.typekit.net/zft7azi.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
-  <link rel="stylesheet" href="/assets/css/global.css">
-  <script src="/assets/js/libs/modernizr.min.js"></script>
+  <!-- @stylesheet app -->
+  <!-- @javascript modernizr.min -->
 
   <link href="/assets/favicon.ico" rel="shortcut icon">
   <link href="/assets/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <title><?= $title ?></title>
+  <title><!-- $title --></title>
+
+  <!-- @reload -->
 
 </head>
 
-<body class="<?= $bodyClass ?>">
+<body class="<!-- $bodyClass | -->">
 
   <header>
     <div class="container clearfix">
@@ -25,6 +27,6 @@
         <div><a href="/">Matt West</a></div>
         <div class="title">Entrepreneur &amp; Web Developer</div>
       </div>
-      <?php require_once('_nav.php') ?>
+      <!-- @include _nav -->
     </div>
   </header>

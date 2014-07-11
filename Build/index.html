@@ -1,9 +1,64 @@
-<?php
-	$title = "Matt West - Entrepreneur and Web Developer";
-	$bodyClass = "home";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	require_once('templates/_header.php');
-?>
+  <script type="text/javascript" src="//use.typekit.net/zft7azi.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+  <link rel='stylesheet' href='assets/css/app.css'>
+  <script src='assets/js/libs/modernizr.min.js'></script>
+
+  <link href="/assets/favicon.ico" rel="shortcut icon">
+  <link href="/assets/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <title>Matt West - Entrepreneur and Web Developer</title>
+
+  
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+
+</head>
+
+<body class="home">
+
+  <header>
+    <div class="container clearfix">
+      <div id="logo">
+        <div><a href="/">Matt West</a></div>
+        <div class="title">Entrepreneur &amp; Web Developer</div>
+      </div>
+      <nav>
+	<ul class="clearfix">
+		<li class='current'><a class='current' href="index.html">About Me</a></li>
+		<li><a href="portfolio.html">Portfolio</a></li>
+		<li><a href="hire-me.html">Hire Me</a></li>
+		<li><a href="http://blog.mattwest.io" target="_blank">Blog</a></li>
+	</ul>
+</nav>
+    </div>
+  </header>
 
   <div id="feature">
     <div class="container clearfix">
@@ -18,7 +73,7 @@
   			<section>
           <h2>About Me</h2>
           <p>
-            I'm an entrepreneur and web developer from England. These days I can usually be found working on my startup <a href="http://kojilabs.com" target="_blank">Koji Labs</a>, or writing technical articles for the <a href="http://blog.teamtreehouse.com/author/mattwest">Treehouse Blog</a>.
+            I'm an entrepreneur and web developer from England. These days I can usually be found working on web products at <a href="http://kojilabs.com" target="_blank">Koji Labs</a>, or writing articles for <a href="http://postach.io" target="_blank">Postach.io</a>.
           </p>
           <p>
             In 2012 I was given the opportunty to work with some really brilliant people and write a book about web design. The result was <a href="http://html5foundations.com" target="_blank">HTML5 Foundations</a>.
@@ -63,7 +118,7 @@
           <h3><a href="http://blog.teamtreehouse.com/author/mattwest" target="_blank">Treehouse Blog</a></h3>
           <div class="clearfix">
             <span class="exp-title">Writer</span>
-            <span class="exp-duration">Nov 2012 - Present</span>
+            <span class="exp-duration">Nov 2012 - Apr 2014</span>
           </div>
 
           <h3><a href="http://blog.matt-west.com" target="_blank">Personal Blog</a></h3>
@@ -79,25 +134,13 @@
   			<section id="current-projects">
           <h2>Current Projects</h2>
 
-          <h3 class="no-top-margin"><a href="http://kojitsu.com" target="_blank">Kojitsu</a></h3>
-          <div class="clearfix">
-            <span class="exp-title">Founder</span>
-            <span class="exp-duration">Jan 2014 - Present</span>
-          </div>
-          <p>
-            Kojitsu is the first product from Koji Labs. The app monitors your Twitter and Facebook feeds and gives you the ten best links shared by your friends.
-          </p>
-          <p>
-            Kojitsu is currently in closed beta. You can request an invite on <a href="http://kojitsu.com">kojitsu.com</a>.
-          </p>
-
-          <h3><a href="http://kojilabs.com" target="_blank">Koji Labs</a></h3>
+          <h3 class="no-top-margin"><a href="http://kojilabs.com" target="_blank">Koji Labs</a></h3>
           <div class="clearfix">
             <span class="exp-title">Founder</span>
             <span class="exp-duration">Jan 2013 - Present</span>
           </div>
           <p>
-            Koji Labs is creating new ways to discover content by leveraging the power of your social feeds.
+            Koji Labs is web agency and digital product studio.
           </p>
           <p>
             Sign up to the mailing list for updates.
@@ -123,7 +166,19 @@
         <section id="past-projects" class="no-margin">
           <h2>Past Projects</h2>
 
-          <h3 class="no-top-margin"><a href="http://wlco.me" target="_blank">wlcome</a></h3>
+          <h3 class="no-top-margin"><a href="http://kojitsu.com" target="_blank">Kojitsu</a></h3>
+          <div class="clearfix">
+            <span class="exp-title">Founder</span>
+            <span class="exp-duration">Jan 2014 - Jul 2014</span>
+          </div>
+          <p>
+            Kojitsu was the first product from Koji Labs. The app monitored your Twitter and Facebook feeds and gave you the ten best links shared by your friends.
+          </p>
+          <p>
+            Kojitsu was shut down on July 11<sup>th</sup> 2014.
+          </p>
+
+          <h3><a href="http://wlco.me" target="_blank">wlcome</a></h3>
           <div class="clearfix">
             <span class="exp-title">Developer &amp; Designer</span>
             <span class="exp-duration">May 2013 - Sept 2013</span>
@@ -164,4 +219,27 @@
 
   </section>
 
-<?php require_once('templates/_footer.php'); ?>
+	<footer>
+		<div class="container clearfix">
+			&copy; 2014 Matt West.
+		</div>
+	</footer>
+
+  <script src='assets/js/libs/jquery-1.8.3.min.js'></script>
+<script src='assets/js/libs/jquery.transit.min.js'></script>
+<script src='assets/js/lightshow.js'></script>
+<script src='assets/js/app.js'></script>
+
+	<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-27571908-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</body>
+</html>

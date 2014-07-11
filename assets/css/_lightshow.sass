@@ -1,0 +1,94 @@
+/*
+ *  Name: Light Show
+ *  Version: 1.0
+ *  Author: Matt West
+ */
+
+$red: #e61863
+$green: #18e69b
+$blue: #18CAE6 // Tron Blue
+// $blue: #0000FF
+$yellow: #cae618
+
+.tail
+  width: 5px
+  height: 5px
+
+  &::after
+    content: ''
+    display: block
+    height: 5px
+    width: 180px
+    right: 0
+    top: 0
+
+.REDtail
+  background: $red
+  @include box-shadow(0 0 10px $red)
+
+  &::after
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSItMzAlIiBzdG9wLWNvbG9yPSIjZTYxODYzIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSJyZ2JhKDI1NSwyNTUsMjU1LDApIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g)
+    background: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(-30%, #e61863), color-stop(100%, rgba(255, 255, 255, 0)))
+    background: -webkit-linear-gradient(left top, #e61863 -30%, rgba(255, 255, 255, 0))
+    background: -moz-linear-gradient(left top, #e61863 -30%, rgba(255, 255, 255, 0))
+    background: -o-linear-gradient(left top, #e61863 -30%, rgba(255, 255, 255, 0))
+    background: linear-gradient(left top, #e61863 -30%, rgba(255, 255, 255, 0))
+
+.GREENtail
+  background: $green
+  @include box-shadow(0 0 10px $green)
+
+  &::after
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSItMzAlIiBzdG9wLWNvbG9yPSIjMThlNjliIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSJyZ2JhKDI1NSwyNTUsMjU1LDApIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g)
+    background: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(-30%, #18e69b), color-stop(100%, rgba(255, 255, 255, 0)))
+    background: -webkit-linear-gradient(left top, #18e69b -30%, rgba(255, 255, 255, 0))
+    background: -moz-linear-gradient(left top, #18e69b -30%, rgba(255, 255, 255, 0))
+    background: -o-linear-gradient(left top, #18e69b -30%, rgba(255, 255, 255, 0))
+    background: linear-gradient(left top, #18e69b -30%, rgba(255, 255, 255, 0))
+
+.YELLOWtail
+  background: $yellow
+  @include box-shadow(0 0 10px $yellow)
+
+  &::after
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSItMzAlIiBzdG9wLWNvbG9yPSIjY2FlNjE4Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSJyZ2JhKDI1NSwyNTUsMjU1LDApIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g)
+    background: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(-30%, #cae618), color-stop(100%, rgba(255, 255, 255, 0)))
+    background: -webkit-linear-gradient(left top, #cae618 -30%, rgba(255, 255, 255, 0))
+    background: -moz-linear-gradient(left top, #cae618 -30%, rgba(255, 255, 255, 0))
+    background: -o-linear-gradient(left top, #cae618 -30%, rgba(255, 255, 255, 0))
+    background: linear-gradient(left top, #cae618 -30%, rgba(255, 255, 255, 0))
+
+.BLUEtail
+  background: $blue
+  @include box-shadow(0 0 10px $blue)
+
+  &::after
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSItMzAlIiBzdG9wLWNvbG9yPSIjMThjYWU2Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSJyZ2JhKDI1NSwyNTUsMjU1LDApIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g)
+    background: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(-30%, #18cae6), color-stop(100%, rgba(255, 255, 255, 0)))
+    background: -webkit-linear-gradient(left top, #18cae6 -30%, rgba(255, 255, 255, 0))
+    background: -moz-linear-gradient(left top, #18cae6 -30%, rgba(255, 255, 255, 0))
+    background: -o-linear-gradient(left top, #18cae6 -30%, rgba(255, 255, 255, 0))
+    background: linear-gradient(left top, #18cae6 -30%, rgba(255, 255, 255, 0))
+
+.horizontal-LR
+  position: absolute
+  left: -10px
+  z-index: 1
+  @include transform(rotate(180deg))
+
+.horizontal-RL
+  position: absolute
+  right: -10px
+  z-index: 1
+
+.vertical-TB
+  position: absolute
+  top: -10px
+  z-index: 1
+  @include transform(rotate(-90deg))
+
+.vertical-BT
+  position: absolute
+  bottom: -10px
+  z-index: 1
+  @include transform(rotate(90deg))
